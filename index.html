@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For My Baby ❤️🏏</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Background effects -->
+    <div class="stars"></div>
+    <div class="hearts-container"></div>
+
+    <!-- ============================= -->
+    <!-- OPENING SCREEN -->
+    <!-- ============================= -->
+
+    <section id="opening" class="screen active">
+
+        <div class="opening-content">
+
+            <div class="small-label">A LITTLE SURPRISE FOR YOU ❤️</div>
+
+            <div class="cricket-ball">🏏</div>
+
+            <h1>
+                Hey My<br>
+                <span>Champion ❤️</span>
+            </h1>
+
+            <p class="opening-text">
+                Before you go out there...
+                I have something to tell you.
+            </p>
+
+            <button class="main-button" onclick="startSurprise()">
+                TAP TO OPEN 💌
+            </button>
+
+            <p class="tiny-text">
+                Made with lots of love, just for you 🫶🏻
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- MAIN PAGE -->
+    <!-- ============================= -->
+
+    <main id="mainContent" class="hidden">
+
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+
+            <div class="floating-ball">🏏</div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">MATCH DAY ✨</p>
+
+                <h1>
+                    GOOD LUCK,<br>
+                    <span>MY LOVE ❤️</span>
+                </h1>
+
+                <p class="hero-description">
+                    Today is your day.
+                    Go out there, play your heart out,
+                    and enjoy every moment.
+                </p>
+
+                <div class="photo-frame">
+                    <!-- IMAGE 1:
+                         Add his favourite cricket photo here -->
+                    <img src="images/image1.png"
+                         alt="My champion playing cricket">
+                </div>
+
+                <p class="photo-caption">
+                    My favourite cricketer 🏏❤️
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- LETTER SECTION -->
+        <!-- ============================= -->
+
+        <section class="letter-section">
+
+            <div class="section-card">
+
+                <div class="card-decoration">💌</div>
+
+                <h2>A little reminder...</h2>
+
+                <div class="letter">
+
+                    <p>
+                        My baby,
+                    </p>
+
+                    <p>
+                        I know you've been thinking about this match
+                        again and again. I know everyone is expecting
+                        you to win.
+                    </p>
+
+                    <p>
+                        But please remember something...
+                    </p>
+
+                    <p class="highlight-text">
+                        You don't have to be perfect.
+                    </p>
+
+                    <p>
+                        Just go there, breathe, trust yourself,
+                        and give it your best.
+                    </p>
+
+                    <p>
+                        You've worked so hard for this.
+                        You know what you're capable of.
+                    </p>
+
+                    <p class="love-line">
+                        And whatever happens...
+                        I will always be proud of you. ❤️
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- STRESS BUTTON -->
+        <!-- ============================= -->
+
+        <section class="stress-section">
+
+            <div class="stress-card">
+
+                <div class="stress-icon">
+                    😣
+                </div>
+
+                <h2>
+                    Feeling stressed?
+                </h2>
+
+                <p>
+                    If your mind is getting too loud,
+                    press this.
+                </p>
+
+                <button class="stress-button" onclick="showComfort()">
+                    I'M STRESSED 🥺
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- COMFORT MESSAGE -->
+        <!-- ============================= -->
+
+        <section id="comfortSection" class="comfort-section hidden-section">
+
+            <div class="comfort-card">
+
+                <div class="big-heart">
+                    ❤️
+                </div>
+
+                <h2>
+                    Heyyy my baby...
+                </h2>
+
+                <p class="comfort-main">
+                    Don't be stressed.
+                </p>
+
+                <p>
+                    Take a deep breath...
+                </p>
+
+                <div class="breathing">
+                    <div class="breathing-circle">
+                        BREATHE
+                    </div>
+                </div>
+
+                <p class="hero-message">
+                    You are a HERO for me<br>
+                    at every single time. 🥺❤️
+                </p>
+
+                <p>
+                    You don't need to prove anything to me.
+                    I already know how amazing you are.
+                </p>
+
+                <p class="special-message">
+                    I love my baby sooooo much. ❤️
+                </p>
+
+                <button class="continue-button"
+                        onclick="goToQuestion()">
+                    Okay... now smile for me 😚
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- QUESTION -->
+        <!-- ============================= -->
+
+        <section id="questionSection" class="question-section hidden-section">
+
+            <div class="question-card">
+
+                <div class="question-ball">
+                    🏏
+                </div>
+
+                <p class="question-small">
+                    ONE IMPORTANT QUESTION...
+                </p>
+
+                <h2>
+                    What do you think?
+                </h2>
+
+                <h1>
+                    Will you win today? 👀
+                </h1>
+
+                <p>
+                    Be honest, Captain 😌
+                </p>
+
+                <div class="answer-buttons">
+
+                    <button onclick="answerYes()">
+                        OF COURSE I WILL 😎🏆
+                    </button>
+
+                    <button onclick="answerMaybe()">
+                        I'LL GIVE MY BEST ❤️
+                    </button>
+
+                    <button onclick="answerNo()">
+                        HMMM... LET'S SEE 😂
+                    </button>
+
+                </div>
+
+                <div id="answerResult" class="answer-result"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- PHOTO SECTION -->
+        <!-- ============================= -->
+
+        <section class="memories-section">
+
+            <p class="eyebrow">
+                JUST A LITTLE REMINDER...
+            </p>
+
+            <h2>
+                Look at my favourite person ❤️
+            </h2>
+
+            <div class="memory-grid">
+
+                <div class="memory-card rotate-left">
+                    <!-- IMAGE 2:
+                         Your favourite photo together -->
+                    <img src="images/image2.jpeg"
+                         alt="Our favourite memory">
+                </div>
+
+                <div class="memory-card rotate-right">
+                    <!-- IMAGE 3:
+                         Cute/funny photo of him -->
+                    <img src="images/image3.jpeg"
+                         alt="My favourite person">
+                </div>
+
+                <div class="memory-card rotate-left">
+                    <!-- IMAGE 4:
+                         Your romantic photo -->
+                    <img src="images/image4.jpeg"
+                         alt="Our special moment">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- FINAL LOVE SECTION -->
+        <!-- ============================= -->
+
+        <section class="final-section">
+
+            <div class="final-content">
+
+                <div class="final-hearts">
+                    ❤️ 💕 ❤️
+                </div>
+
+                <h1>
+                    No matter what...
+                </h1>
+
+                <p>
+                    Remember that someone is always
+                    cheering for you.
+                </p>
+
+                <div class="final-photo">
+                    <!-- You can use your most romantic photo here -->
+                    <img src="images/image5.jpeg"
+                         alt="Us">
+                </div>
+
+                <h2>
+                    I LOVE YOU
+                </h2>
+
+                <h3>
+                    UMMMMMMMMMMAAAAAAA 😘💋❤️
+                </h3>
+
+                <p class="final-message">
+                    Now go show them what my champion can do. 🏏🔥
+                </p>
+
+                <button class="kiss-button"
+                        onclick="sendKisses()">
+                    TAP FOR KISSES 😘
+                </button>
+
+                <div id="kissResult"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>
+                Made with ❤️ especially for my baby
+            </p>
+
+            <p>
+                Your biggest supporter 🫶🏻
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
